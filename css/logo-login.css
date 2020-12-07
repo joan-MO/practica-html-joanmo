@@ -5,3 +5,13 @@
   justify-content: center;
   color: white;
 }
+
+.logo-login img {
+  margin-bottom: -30px;
+}
+
+@media (min-width: 740px) {
+  .logo-login img {
+    margin-bottom: 5px;
+  }
+}
