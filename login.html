@@ -6,20 +6,32 @@
     <title>Form</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/logo-login.css">
 </head>
 <body>
+    <div class="logo-login">
+        <h1><i class="fab fa-html5"></i></h1>
+    </div>
     <div class="login">
         <form action="" id="form-login" class="form-login">
+            <h1 class="title-login">Iniciar sesión</h1>
             <p>
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email" class="email">
+                <input type="email" name="email" id="email" class="email">
             </p>
-           <p>
+           <p class="form-password">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="password">
-           </p> 
+           </p>
+           <p class="remember">
+               <label for="remember-password" class="hola">Remeber
+                    <input type="checkbox" name="remember-password" id="remember-password" class="remember-password">
+                    <span class="custom-checkbox"></span>
+                    
+            </label>
+           </p>
             <p class="login-button">
-                <input type="submit" value="Login">
+                <input type="submit" value="Iniciar sesión">
             </p>  
             <p class="forgot-password">
                 <a href="#">OLVIDE MI CONTRASEÑA</a>
