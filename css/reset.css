@@ -1,0 +1,24 @@
+/* establece el box-sizing según */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* elimino espaciados de body */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* elementos media, responsive */
+img,
+video {
+  max-width: 100%;
+}
