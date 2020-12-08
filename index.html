@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/logo-login.css">
 </head>
 <body>
-    
+    <div class="logo-login">
+        <h1><img src="./img/html-5.png" alt=""></h1>
+    </div>
+    <div class="login">
+        <form action="" id="form-login" class="form-login">
+            <h1 class="title-login">Iniciar sesión</h1>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="email" required>
+            </p>
+           <p class="form-password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password" required>
+           </p>
+           <p class="remember">
+               <input type="checkbox" name="remember-password" id="remember-password" class="remember-password" required>
+                <label for="remember-password">Remeber</label>
+           </p>
+            <p class="login-button">
+                <input type="submit" value="Iniciar sesión">
+            </p>  
+            <p class="forgot-password">
+                <a href="#">OLVIDE MI CONTRASEÑA</a>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
