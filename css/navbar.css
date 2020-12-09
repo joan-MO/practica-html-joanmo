@@ -1,0 +1,132 @@
+.navbar {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.session {
+  background-color: green;
+  border-radius: 10px;
+}
+
+.session:hover {
+  background-color: rgb(15, 163, 15);
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.search {
+  height: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: space-evenly;
+  line-height: 3rem;
+}
+
+.list-item {
+  text-align: center;
+}
+.list-item a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.list-item .item:hover {
+  color: rgb(49, 233, 49);
+}
+
+.logo-search {
+  width: 20px;
+  position: absolute;
+  margin-top: 0.8rem;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+.burger-label {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.burger-label:before {
+  content: "";
+  background-color: white;
+  width: 1.3rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 1rem;
+  top: 0;
+
+  box-shadow: 0 0.5rem 0 0 white, 0 1rem 0 0 white;
+}
+
+#burger-checkbox:checked ~ .list-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - 3rem);
+  opacity: 0.7;
+}
+@media (min-width: 806px) {
+  .navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .burger-label {
+    display: none;
+  }
+
+  .navbar .logo-menu img {
+    margin: 0 1rem 0.5rem;
+    width: 30px;
+    height: 30px;
+  }
+  .list-menu {
+    display: flex;
+  }
+
+  .item {
+    color: white;
+
+    line-height: 3rem;
+  }
+
+  .logo-search {
+    position: relative;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .session {
+    margin-right: 1rem;
+  }
+}

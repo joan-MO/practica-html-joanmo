@@ -5,44 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/cards.css">
 </head>
 <body>
-    <navbar>
+    <navbar id="navbar" class="navbar">
         <div class="logo-menu">
-            <img src="./img/html-5.png" alt="">
+            <img src="./img/html-5.png" alt="" >
         </div>
+
+        <input type="checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger-label"></label>
+        
         <ul class="list-menu">
-            <li class="list-item">Favoritos</li>
-            <li class="list-item">Los más Vistos</li>
-            <li class="list-item">Recomendados</li>
-            <li class="list-item">Cerrar session</li>
+            <li class="list-item"><a href="#favoritos" class="item">Favoritos</a></li>
+            <li class="list-item"><a href="#recomendados" class="item">Recomendados</a></li>
+            <li class="list-item"><a href="#" class="item">Los más vistos</a></li>
+            <li class="list-item" ><a href="#" class="session">Cerrar session</a></li>
+            <li class="list-item"><input type="text" placeholder="Buscar" class="search"><img src="./img/magnifying-glass-3-24.png" alt="" class="logo-search"></li>
         </ul>
-        <div class="search">
-            <input type="text" placeholder="Buscar">
-        </div>
-        <div class="profile">
-            <img src="./img/html-5.png" alt="">
-        </div>
     </navbar>
+    
+       
     <main class="main">
-        <section class="favoritos">
+        <section id="favoritos" class="favoritos">
             <h1>Favoritos</h1>
             <div class="card-movies">
                 <article class="card-movie">
-                    <img src="https://picsum.photos/id/1/200/200" alt="">
+                    <img src="https://picsum.photos/id/1/400/400" alt="">
                 </article>
                 <article class="card-movie">
-                    <img src="https://picsum.photos/id/2/200/200" alt="">
+                    <img src="https://picsum.photos/id/2/400/400" alt="">
                 </article>
                 <article class="card-movie">
-                    <img src="https://picsum.photos/id/3/200/200" alt="">
+                    <img src="https://picsum.photos/id/3/400/400" alt="">
                 </article>
                 <article class="card-movie">
-                    <img src="https://picsum.photos/id/4/200/200" alt="">
+                    <img src="https://picsum.photos/id/4/400/400" alt="">
                 </article>
             </div>
         </section>
-        <section class="recomendados">
+        <section id="recomendados" class="recomendados">
             <h1>Recomendados</h1>
             <div class="card-movies">
                 <article class="card-movie">
