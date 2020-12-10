@@ -1,0 +1,65 @@
+main {
+  margin-top: 3rem;
+  padding: 0.2rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-relacionado {
+  margin: 0;
+}
+
+.item-relacionado img {
+  float: left;
+  margin-right: 1rem;
+}
+
+div.reset {
+  clear: both;
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgb(19, 136, 245);
+  color: white;
+  height: 2rem;
+  font-size: 1rem;
+  border: 0;
+}
+
+button {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+hr {
+  margin-top: 1.2rem;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.stars a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: lightslategray;
+}
+
+.stars:hover a {
+  color: rgb(251, 255, 16);
+}
+
+.stars > a:hover ~ a {
+  color: lightslategray;
+}
+
+video {
+  outline: none;
+}
