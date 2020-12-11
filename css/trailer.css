@@ -61,5 +61,77 @@ hr {
 }
 
 video {
+  width: 100%;
   outline: none;
+}
+
+/*media query main container */
+
+@media (min-width: 610px) and (max-width: 646px) {
+  main {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 699px) {
+  main {
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    margin-top: 5.5rem;
+  }
+}
+
+/* media query desktop*/
+
+@media (min-width: 1045px) {
+  video {
+    width: 150%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 10px minmax(500px, auto) 290px;
+    grid-auto-rows: 150px;
+    grid-template-areas: " nav   main    side1";
+  }
+
+  .navbar {
+    grid-area: nav;
+  }
+
+  .trailer-video {
+    grid-area: main;
+    width: 100%;
+  }
+
+  section {
+    grid-area: side1;
+    margin-top: -30px;
+    width: 100%;
+    padding: 0.9rem;
+  }
+
+  article h2 {
+    margin-top: 0.8rem;
+  }
+
+  .item-relacionado img {
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    grid-template-columns: 10px minmax(500px, auto) 500px;
+  }
+}
+
+@media (min-width: 2000px) {
+  main {
+    grid-template-columns: 10px minmax(00px, auto) 700px;
+  }
 }
