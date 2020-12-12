@@ -11,7 +11,7 @@ section article img {
 .main {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,13 +29,29 @@ section article img {
   border-bottom: 12px solid rgb(19, 109, 194);
 }
 
-.badge {
+.badge-item {
   position: absolute;
-
+  color: red;
+  font-size: 5rem;
   top: 1.5rem;
   left: 10px;
   padding: 3px 6px;
 }
+
+.nofavorite {
+  color: #fff;
+}
+
+/*
+.badge2 {
+  position: absolute;
+  color: red;
+  font-size: 5rem;
+  top: 1.5rem;
+  left: 10px;
+  padding: 3px 6px;
+}
+*/
 
 .badge:hover {
   opacity: 0.5;
@@ -113,5 +129,56 @@ section article img {
 
   .stars a {
     font-size: 16px;
+  }
+
+  .badge-item {
+    font-size: 3.5rem;
+  }
+
+  .main {
+    margin-top: 15rem;
+  }
+}
+
+/*media query main*/
+@media (min-width: 453px) and (max-width: 489px) {
+  .main {
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 489px) and (max-width: 550px) {
+  .main {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 580px) {
+  .main {
+    margin-top: 11rem;
+  }
+}
+
+@media (min-width: 581px) and (max-width: 610px) {
+  .main {
+    margin-top: 12rem;
+  }
+}
+
+@media (min-width: 610px) and (max-width: 640px) {
+  .main {
+    margin-top: 13rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 690px) {
+  .main {
+    margin-top: 14.5rem;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 800px) {
+  .main {
+    margin-top: 15.5rem;
   }
 }

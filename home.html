@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carrousel.css">
 </head>
 <body>
     <navbar id="navbar" class="navbar">
@@ -26,6 +27,57 @@
             <li class="list-item"><input type="text" placeholder="Buscar" class="search"><img src="./img/magnifying-glass-3-24.png" alt="" class="logo-search"></li>
         </ul>
     </navbar>
+
+    <header>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <h2>Spiderman</h2>
+                                <img src="https://picsum.photos/id/33/2200/1000" alt="">
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Badman</h2>
+                                <img src="https://picsum.photos/id/34/2200/1000" alt="">
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Superman</h2>
+                                <img src="https://picsum.photos/id/35/2200/1000" alt="">
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Lobezno</h2>
+                                <img src="https://picsum.photos/id/36/2200/1000" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </header>
     
        
     <main class="main">
@@ -37,7 +89,7 @@
                         <article class="card-movie card-front">
                         
                             <img src="https://picsum.photos/id/1/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                             
@@ -63,7 +115,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/2/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                              <h2>Spiderman</h2>
@@ -88,7 +140,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/3/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item nofavorite">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                         <h2>Spiderman</h2>
@@ -113,7 +165,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/4/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                         
@@ -144,7 +196,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/5/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                         
@@ -169,7 +221,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/6/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item nofavorite">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                         
@@ -194,7 +246,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/7/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                         <div class="flip-card-back">
                         
@@ -219,7 +271,7 @@
                         <article class="card-movie card-front">
                 
                             <img src="https://picsum.photos/id/8/400/400" alt="">
-                            <span class="badge"><img src="./img/corazon.png" alt=""></span>
+                            <span class="badge-item">&#x2665;</span>
                         </article>
                     <div class="flip-card-back">
                     
